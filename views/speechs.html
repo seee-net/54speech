@@ -1,0 +1,132 @@
+{% extends './views/base.html' %}
+
+{% block title %}
+<title>{{ title }}</title>
+<link rel="shortcut icon" href="favicon.ico">
+{% endblock %}
+
+{% block header %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="page-header ">
+            <h1 class="hidden">电气学院学生会</h1>
+            <h2 class="hidden">网络部</h2>
+            <img class="img-responsive " src="img/timg.jpg" alt="五四演讲欢迎您">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="jumbotron" style="background: #f0faff">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 style="font-family: '微软雅黑',' 幼圆',' 黑体',' 等线'">五四演讲报名表</h3>
+                <form role="form" class="form-group col-md-4 col-md-offset-4" action="./speechIn" method="post">
+                    <div>
+                        <label for="inputNumber">学 号:</label>
+                        <input class="form-control" id="inputNumber" name="number" type="text" placeholder="学号" />
+                    </div>
+                    <div>
+                        <label for="inputName">姓 名:</label>
+                        <input class="form-control" id="inputName" name="name" type="text" placeholder="姓名" />
+                    </div>
+                    <div>
+                        <label for="inputSex">性 别:</label>
+                        <select class="form-control" id="inputSex" name="sex">
+                            <option value="" selected>***请选择***</option>
+                            <option>男</option>
+                            <option>女</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="inputAcademic">院 系:</label>
+                        <select class="form-control" id="inputAcademic" name="academic">
+                            <option value="" selected>***请选择***</option>
+                            <option>机械科学与工程学院</option>
+                            <option>计算机科学与技术学院</option>
+                            <option>生命科学与技术学院</option>
+                            <option>电气与电子工程学院</option>
+                            <option>材料科学与工程学院</option>
+                            <option>船舶与海洋工程学院</option>
+                            <option>能源与动力工程学院</option>
+                            <option>自动化学院</option>
+                            <option>光学与电子信息学院</option>
+                            <option>水电与数字化工程学院</option>
+                            <option>软件学院</option>
+                            <option>环境科学与工程学院</option>
+                            <option>电子信息与通信学院</option>
+                            <option>建筑与城市规划学院</option>
+                            <option>土木工程与力学学院</option>
+                            <option>化学与化工学院</option>
+                            <option>数学与统计学院</option>
+                            <option>物理学院</option>
+                            <option>公共管理学院</option>
+                            <option>经济学院</option>
+                            <option>管理学院</option>
+                            <option>人文学院</option>
+                            <option>新闻与信息传播学院</option>
+                            <option>马克思主义学院</option>
+                            <option>社会学院</option>
+                            <option>法学院</option>
+                            <option>外国语学院</option>
+                            <option>基础医学院</option>
+                            <option>药学院</option>
+                            <option>医药卫生管理学院</option>
+                            <option>公共卫生学院</option>
+                            <option>法医学系</option>
+                            <option>护理学院</option>
+                            <option>计划生育研究所</option>
+                            <option>第一临床学院</option>
+                            <option>第二临床学院</option>
+                            <option>第三临床学院</option>
+                            <option>远程与继续教育学院</option>
+                            <option>教育科学研究院</option>
+                            <option>中欧清洁与可再生能源学院</option>
+                            <option>体育部</option>
+                            <option>艺术教育中心</option>
+                            <option>武汉光电国家研究中心</option>
+                            <option>工程科学学院（国际化示范学院）</option>
+                            <option>武汉国际微电子学院</option>
+                            <option>航空航天学院</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="inputClass">班 级:</label>
+                        <input class="form-control" id="inputAclass" name="aclass" type="text" placeholder="班级" />
+                    </div>
+                    <div>
+                        <label for="inputGirlQQ">QQ:</label>
+                        <input class="form-control" id="inputGirlQQ" name="QQ" type="text" placeholder="QQ" />
+                    </div>
+                    <div>
+                        <label for="inputTel">Tel:</label>
+                        <input class="form-control" id="inputTel" name="tel" type="text" placeholder="手机号码" />
+                    </div>
+                    <div>
+                        <label for="inputEmail">邮 箱:</label>
+                        <input class="form-control" id="inputEmail" name="email" type="text" placeholder="邮箱" />
+                    </div>
+                    <div>
+                        <label for="inputDeclaration">参赛宣言:</label>
+                        <input class="form-control" id="inputDeclaration" name="declaration" type="text" placeholder="参赛宣言" />
+                    </div>
+                    <div>
+                        <label for="inputIntroduction">个人简介:</label>
+                        <input class="form-control" id="inputIntroduct" name="introduction" type="text" placeholder="个人简介" />
+                    </div>
+                    <div>
+                        <label for="inputUnderstand">比赛理解:</label>
+                        <input class="form-control" id="inputUnderstand" name="understand" type="text" placeholder="对大赛主题的理解" />
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn-block btn-danger">提 交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
